@@ -1,6 +1,10 @@
 var canvas = document.querySelector("canvas"),
   ctx = canvas.getContext("2d");
 
+var div = document.getElementById('message');
+var button = document.querySelector('button');
+var container = document.getElementById("container");
+
 var ww,wh;
 
 function onResize(){
@@ -83,19 +87,18 @@ function render(a){
 }
 
 function playSound(){
-  var audio = document.createElement('audio');
-  audio.style.display = "none";
-  audio.src = "i-wanna-be-your-girlfriend.mp3";
-  audio.autoplay = true;
-  audio.onended = function(){
-    audio.remove();
-  };
-  document.body.appendChild(audio);
+  var audio = new Audio("i-wanna-be-your-girlfriend.mp3"); 
+  audio.play();
 }
 
-onResize();
-window.addEventListener("mousemove", onMove);
-window.addEventListener("touchmove", onMove);
-window.addEventListener("resize", onResize);
-requestAnimationFrame(render);
-playSound(); 
+button.onclick = (e) => {
+  onResize();
+  window.addEventListener("mousemove", onMove);
+  window.addEventListener("touchmove", onMove);
+  window.addEventListener("resize", onResize);
+  requestAnimationFrame(render);
+  playSound(); 
+  container.style.display = "none";
+  div.style.display = "block";
+}
+  

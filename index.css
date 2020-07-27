@@ -2,6 +2,7 @@
 body{
   overflow: hidden;
   margin: 0;
+  background-color: rgb(224, 224, 121);
 }
 h1{
   position: fixed;
@@ -12,8 +13,34 @@ h1{
   transform:translateY(-50%);
   font-family: 'Love Ya Like A Sister', cursive;
   font-size: 80px;
-  color: #c70012;
+  color: #ffffff;
   padding: 0 20px;
+  text-shadow: 1px 1px 2px rgb(143, 142, 142);
+}
+
+button {
+  padding: 30px;
+  font-size: 30px;
+  background-color: rgb(224, 224, 121);
+  border: 3px solid #eee;
+  color: #eee;
+  font-weight: bold;
+  letter-spacing: 20px;
+  margin-top: 5%;
+  width: 100%;
+}
+
+div#container {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transform:translateY(-50%);
+}
+
+img {
+  width: 40%;
 }
 
 
