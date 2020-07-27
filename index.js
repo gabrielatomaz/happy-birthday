@@ -1,7 +1,7 @@
 var canvas = document.querySelector("canvas"),
   ctx = canvas.getContext("2d");
 
-var audio =  new Audio("joji-slow-dancing-in-the-dark-lyrics-on-screen.mp3");
+var audio =  new Audio("i-wanna-be-your-girlfriend.mp3");
 audio.play();
 
 var ww,wh;
