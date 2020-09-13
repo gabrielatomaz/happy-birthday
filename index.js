@@ -1,9 +1,8 @@
 var canvas = document.querySelector("canvas"),
-  ctx = canvas.getContext("2d");
-
-var div = document.getElementById('message');
-var button = document.querySelector('button');
-var container = document.getElementById("container");
+  ctx = canvas.getContext("2d"), 
+  div = document.getElementById('message'), 
+  button = document.querySelector('button'),
+  container = document.getElementById("container");
 
 var ww,wh;
 
