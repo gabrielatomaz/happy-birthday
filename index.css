@@ -20,11 +20,11 @@ h1{
 
 span {
   position: fixed;
-  top: 72%;
+  top: 80%;
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 32px;
+  font-size: 28px;
   color: #ffffff;
   text-shadow: 1.5px 1.5px 2px rgb(143, 142, 142);
 }
@@ -59,5 +59,10 @@ img {
 @media (min-width:1200px){
   h1{
     font-size: 100px;
+  }
+
+  span {
+    top: 75%;
+    font-size: 35px;
   }
 }
